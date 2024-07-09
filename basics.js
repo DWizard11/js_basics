@@ -42,5 +42,60 @@ console.log(language.substring(1, 4));
 console.log(language.toUpperCase()); 
 console.log(language.replace("Java", "Type"));
 console.log(language.includes("Java")); // true or false 
+
 // use string literals 
 console.log(`But I also like ${language.toLowerCase()}!`)
+
+// if... else 
+let age = 10 // parseInt(prompt("Please enter thy age: ")); 
+
+if (age <= 12) { 
+    console.log("Hello child.");
+    
+}
+else if (age <= 18) { 
+    console.log("Hello man child.");
+} 
+else { 
+    console.log("Hello there"); 
+} 
+
+// for loops
+let fruits = ["apple", "mango", "pineapple", "banana", "coconut"];
+
+for (let i = 0; i < fruits.length; i++) { 
+    console.log(fruits[i]); 
+} 
+
+console.log()
+
+for (let fruit of fruits) { 
+    console.log(fruit); 
+} 
+
+// while loop 
+let counter = 10; 
+while (counter > 0) { 
+    console.log(counter); 
+    counter --; 
+} 
+
+console.log("Ka ba boom!"); 
+
+// arrays (just Python lists)
+let numbers = [123, 456, 789];
+let schools = ["RI", "ASR", "EJC", "ACJC"];
+let mixed = [1.23, "Happy", [4, 5, 6]];
+
+console.log(numbers[0]); 
+console.log(schools.length); 
+
+schools.push("TMJC"); // insert at end
+schools.push("HCI");
+console.log(schools); 
+schools.pop(); 
+console.log(schools); 
+
+for (let i = 0; i < schools.length; i++) { 
+    console.log(schools[i]); 
+} 
